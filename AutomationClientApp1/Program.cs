@@ -5,7 +5,7 @@ using System.IO;
 using System.Reflection;
 
 string programPath = Assembly.GetExecutingAssembly().Location;
-string relativePath = @"..\..\..\..\WpfApp1\bin\Debug\net6.0-windows\WpfApp1.exe";
+string relativePath = @"..\..\..\..\WpfApp1\bin\Debug\net48-windows\WpfApp1.exe";
 string appPath = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(programPath), relativePath));
 
 Launcher.Launch(appPath, "WpfApp1");
